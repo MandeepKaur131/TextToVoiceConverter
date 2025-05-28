@@ -24,6 +24,3 @@ Please use the feedback form in the app to suggest features or report issues.
 
 ## Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-No license yet. Please contact the author for usage permissions.
