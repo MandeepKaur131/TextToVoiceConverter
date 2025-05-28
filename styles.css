@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #232526 0%, #414345 100%);
+}
+
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    overflow-y: auto;
+}
+
+.app-container {
+    background: rgba(30, 34, 44, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1.5px solid #00ffe7;
+    padding: 2.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #00ffe7;
+    min-width: 320px;
+    max-width: 420px;
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+.headings-container h1 {
+    font-family: 'Orbitron', 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    color: #00ffe7;
+    text-shadow: 0 0 8px #00ffe7, 0 0 2px #fff;
+}
+
+.headings-container h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 4px #00ffe7;
+}
+
+.interaction-container {
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.text-control {
+    background: #232526;
+    color: #00ffe7;
+    border: 1.5px solid #00ffe7;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    min-height: unset;
+    max-height: unset;
+    width: 100%;
+    margin-bottom: 1rem;
+    resize: none;
+    box-shadow: 0 0 8px #00ffe733;
+    font-family: 'Poppins', 'Orbitron', sans-serif;
+}
+
+.text-control:focus-visible {
+    outline: none;
+}
+
+.error-para {
+    color: #ff3860;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    min-height: 1.2em;
+    text-shadow: 0 0 2px #fff;
+}
+
+.btn {
+    background: linear-gradient(90deg, #00ffe7 0%, #0077ff 100%);
+    color: #232526;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-family: 'Orbitron', 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 0 8px #00ffe7cc;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    letter-spacing: 1px;
+    width: unset;
+    max-width: unset;
+}
+
+.btn:disabled, #downloadBtn:disabled {
+    background: #444a57;
+    color: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.btn:hover:not(:disabled), #downloadBtn:hover:not(:disabled) {
+    background: linear-gradient(90deg, #0077ff 0%, #00ffe7 100%);
+    color: #fff;
+    box-shadow: 0 0 16px #00ffe7cc;
+}
+
+#feedbackForm {
+    border: none;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 1.5rem 0 1.5rem 0;
+    margin: 2rem 0 2rem 0;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedbackForm h4 {
+    margin: 0 0 0.5rem 0;
+    color: #00ffe7;
+    font-family: 'Orbitron', 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+#feedbackText {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    border: 1.5px solid #00ffe7;
+    border-radius: 8px;
+    padding: 0.7rem;
+    font-size: 1rem;
+    font-family: 'Poppins', 'Orbitron', sans-serif;
+    background: #232526;
+    color: #00ffe7;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0 6px #00ffe733;
+    resize: vertical;
+    min-height: 40px;
+    max-height: 70px;
+}
+
+#feedbackForm .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    padding: 12px 28px;
+}
+
+#feedbackMsg {
+    color: #00ffe7;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    min-height: 1.2em;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .app-container {
+        min-width: unset;
+        max-width: 98vw;
+        width: 98vw;
+        padding: 1.2rem 0.5rem;
+        margin: 1.2rem 0;
+    }
+    .text-control {
+        font-size: 1rem;
+        padding: 0.5rem;
+        width: 90vw;
+        min-width: 0;
+    }
+    #feedbackForm {
+        max-width: 98vw;
+        padding: 0;
+    }
+    #feedbackText {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
+}
