@@ -1,4 +1,4 @@
-# VoiceToTextConverter
+# TextToVoiceConverter
 
 A simple, accessible web app to convert English text to speech in your browser. Useful for people with visual impairments, reading difficulties, language learners, and anyone who wants to listen to written content.
 
